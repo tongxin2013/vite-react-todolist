@@ -1,12 +1,22 @@
 import { useState } from 'react'
+import ToDoItem from './components/ToDoItem'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [ todoList, setToDoList ] = useState([])
+
+  const hanldleSubmit = (todoItem) => {
+    console.log('App', todoItem)
+    setToDoList([
+      ...todoList,
+      todoItem
+    ])
+  }
 
   return (
-    <>
-      App
-    </>
+    <div className="todo-app">
+      <h2 className="todo-title">待办清单</h2>
+      <ToDoItem onSubmit={hanldleSubmit} />
+    </div>
   )
 }
 
