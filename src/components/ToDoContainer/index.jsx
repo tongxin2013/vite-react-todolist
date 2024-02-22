@@ -27,7 +27,6 @@ const ToDoContainer = (props) => {
   }
 
   const showTodoList = todoList.filter(todo => {
-    console.log(todo.status.toString() > -1)
     return todo.status !== STATUS.IS_DELETE && filterStatus.indexOf(todo.status.toString())  > -1
   })
 

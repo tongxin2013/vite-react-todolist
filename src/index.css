@@ -25,7 +25,8 @@ body {
 
 .todo-container {
   padding: 2px;
-  border: 1px solid darkslategray;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
   border-radius: 5px;
 }
 
@@ -33,7 +34,7 @@ body {
   display: flex !important;
   padding: 10px !important;
   font-size: 15px;
-  border-bottom: 1px solid #333 !important;
+  border-bottom: 1px solid #d9d9d9 !important;
 }
 .todo-container-list:last-child {
   border-bottom: none !important;
