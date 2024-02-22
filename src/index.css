@@ -53,5 +53,9 @@ body {
 }
 
 .todo-item-operate {
+  color: #0958d9;
+}
 
+.todo-item-operate span {
+  margin-left: 10px;
 }
