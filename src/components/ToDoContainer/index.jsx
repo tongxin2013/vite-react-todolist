@@ -4,7 +4,7 @@ import { CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons'
 import { STATUS } from "../../config/status";
 
 const ToDoContainer = (props) => {
-  const { todoList = [], onOperate } = props
+  const { todoList = [], onOperate, filterStatus } = props
   
   const handleOperate = (operate, item) => {
     console.log(operate, item)
@@ -27,7 +27,8 @@ const ToDoContainer = (props) => {
   }
 
   const showTodoList = todoList.filter(todo => {
-    return todo.status !== STATUS.IS_DELETE
+    console.log(todo.status.toString() > -1)
+    return todo.status !== STATUS.IS_DELETE && filterStatus.indexOf(todo.status.toString())  > -1
   })
 
   return (

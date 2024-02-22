@@ -18,6 +18,11 @@ body {
   justify-content: space-between;
 }
 
+.todo-filter {
+  display: flex;
+  margin: 40px 0 10px 0;
+}
+
 .todo-container {
   padding: 2px;
   border: 1px solid darkslategray;
